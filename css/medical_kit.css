@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #F4F4F4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.drug {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.add_h {
+    background-color: #FFFFFF;
+    height: 65px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.drug-cont {
+    width: 90%;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 0px;
+    display:flex;
+    align-items:center;
+}
+
+.drug-image {
+	width:10%;
+    float: left;
+ }
+.drug-image img{
+	width:100%;
+}
+
+.drug-name {
+	width:90%;
+    float: left;
+    padding-left:13px;
+}
+
+.name-size {
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.fac-size {
+    margin-top: 10px;
+    color: #6a7178;
+    font-family: "微软雅黑";
+    font-size: 13px;
+}
+.drug-del{
+	width:10%;
+	float: right;
+}
+.drug-del img{
+    width:100%;
+    
+}
+
+.add-drug {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: fixed;
+    bottom: 0px;
+}
+
+.add-cont {
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.add-image {
+    float: left;
+    width: 22px;
+    height: 22px;
+}
+
+.add {
+    float: left;
+    margin-left: 10px;
+}
+
+.add a {
+    float: left;
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+#cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+}
+
+.choice-box {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    width: 300px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+.marked-words {
+    float: left;
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 19px;
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-left: 33px;
+}
+
+.cut-rule2 {
+    height: 1px;
+    width: 100%;
+    background: #e5e5e5;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.cancle {
+    float: left;
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 58px;
+}
+
+.cut-rule3 {
+    float: left;
+    height: 67px;
+    width: 1px;
+    background: #e5e5e5;
+    overflow: hidden;
+    bottom: 0px;
+    margin-left: 58px;
+}
+
+.sure {
+    float: left;
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 58px;
+}

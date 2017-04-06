@@ -1,0 +1,127 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>用户注册</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+	       //注册用户名校验
+	       function fun4(){
+				var flag=false;
+				var text=document.getElementById("reg_name");
+				var span1=document.getElementById("regnamespan");
+				var src=text.value;
+				var regex=RegExp("^([\u4e00-\u9fa5]|[A-Za-z]){2,10}$");
+				if(src!=""){
+				if(regex.test(src)){
+					span1.innerHTML="√格式正确".fontcolor("green");
+					flag=true;
+				}else {
+					span1.innerHTML="×由2到10位字母或汉字组成".fontcolor("red");	
+				}
+				}else{
+				span1.innerHTML="×用户名不能为空".fontcolor("red");	
+				}
+				return flag;
+				
+			}
+	
+			//注册手机号校验
+			function fun6(){
+				var flag=false;
+				var text=document.getElementById("reg_phone");
+				var span1=document.getElementById("regphonespan");
+				var src=text.value;
+				var regex=RegExp(/^((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)$/);
+				if(src!=""){
+				if(regex.test(src)){
+					span1.innerHTML="√格式正确".fontcolor("green");
+					flag=true;
+				}else{
+					span1.innerHTML="×由11位数字组成".fontcolor("red");	
+				}
+				}else{
+				    span1.innerHTML="×手机号不能为空".fontcolor("red");
+				}
+				return flag;
+			}
+			
+			function fun8(){
+			if(fun4()&&fun5()&&fun6()){
+			  return true;
+			}else{
+			  return false;
+			}
+			}
+			
+			//注册身份证号校验	
+			 	function fun5(){
+					var flag=false;
+					var text=document.getElementById("reg_card");
+					var span1=document.getElementById("regcardspan");
+					var src=text.value;
+					var regex=RegExp(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/);
+					if(src!=""){
+					if(regex.test(src)){
+						span1.innerHTML="√格式正确".fontcolor("green");
+						flag=true;
+					}else {
+						span1.innerHTML="×身份证号格式不正确".fontcolor("red");	
+					}
+					}else{
+					span1.innerHTML="×身份证号不能为空".fontcolor("red");	
+					}
+					return flag;
+				} 
+</script>
+
+<body>
+	<div id="container">
+		<!-- 内容 -->
+					<div class="form_block type_logout">
+						<form action="http://test.e-care.com.cn/zjuchWeb-yy/register.action" method="post" 
+							id="form-register" name="form-register" class="form-horizontal"
+							onsubmit="return fun8()">
+								<!--<legend>注册</legend>-->
+								<div class="item ">
+									<label>用户名</label> 
+									<input class="type_text" id="reg_name" name="reg_name"
+										sucmsg="OK" type="text" onblur="fun4()">
+										 <br />
+										 <span id="regnamespan"> </span> 
+										 <!--<input type="hidden" name="uState" value="">-->
+								</div>
+								<div class="help_text">2-10字,可为中文或者字母</div>
+								
+								<div class="item ">
+									<label>身份证号</label> <input class="type_text" id="reg_card"
+										 type="text" name="reg_card" onblur="fun5()">
+									<br />
+									<span id="regcardspan">  </span>
+								</div>
+								<div class="help_text">请填写正确的身份证号码</div>
+								
+								<div class="item ">
+									<label>手机号</label> <input class="type_text" id="reg_phone"
+										name="reg_phone" type="text" onblur="fun6()"> 
+										 <br />
+										<span id="regphonespan"></span>
+								</div>
+								<div class="help_text">字符长度为11个字符</div>
+								
+								<div class="btn_warp">
+									<input name="submit" class="type_btn" value="注册 " type="submit">
+								</div>
+						</form>
+					</div>
+		<!-- /内容 -->
+</body>
+</html>

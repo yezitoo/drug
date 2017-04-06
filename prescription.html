@@ -1,0 +1,78 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/prescription.css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <title>我的处方</title>
+</head>
+
+<body>
+    <!--<script type="text/javascript">
+			$(function(){
+				myPrescription();
+			});
+			
+			function myPrescription(){
+				$.ajax({
+					url:"",
+					type:"post",
+					dataType:"json",
+					success:function(data){
+						alert(data);
+						var str="";
+						$.each(data, function(index,value){
+							str+="<div class='top-cont'>";
+							str+="<img class='icon1' src='img/icon_01.png'/>";
+							str+="<div class='pre-cont'>";
+							str+="<p class='p1'><a href='#'>";
+							str+=市一医院;
+							str+="</a></p><p class='p2'>";
+							str+=2017-2-3;
+							str+="</p></div>";
+							str+="<img class='icon2' src='img/icon_02.png'>";
+							str+="</div>";
+						});
+						$(".top").html(str);
+					},
+					error:function(err){
+						alert("获取我的处方失败");
+					}
+				});
+			}
+		</script>-->
+    <div class="mainbody">
+        <div class="top">
+            <div class="top-cont">
+                <img class="icon1" src="img/icon_01.png" />
+                <div class="pre-cont">
+                    <p class="p1"><a href="prescriptionMsg.jsp">市一医院</a></p>
+                    <p class="p2">2017-2-3</p>
+                </div>
+                <img class="icon2" src="img/icon_02.png">
+            </div>
+        </div>
+        <div class="top">
+            <div class="top-cont">
+                <img class="icon1" src="img/icon_01.png" />
+                <div class="pre-cont">
+                    <p class="p1"><a href="prescriptionMsg.jsp">杭州市红十字会</a></p>
+                    <p class="p2">2017-2-3</p>
+                </div>
+                <img class="icon2" src="img/icon_02.png">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bot-cont">
+                <img class="icon3" src="img/icon_03.png">
+                <div class="scan"><a href="#">扫描添加处方</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

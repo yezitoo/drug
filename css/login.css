@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container3 {
+    font-size: 16px;
+    background-color: #fff;
+    height: 100%;
+    color: 微软雅黑;
+}
+
+.container3 label {
+    position: relative;
+}
+
+.container3 form input,
+button {
+    width: 90%;
+    height: 40px;
+    margin: 10px 18px;
+    padding-left: 15px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#save {
+    background-color: rgb(0, 205, 180);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 0px;
+}
+

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+	width:100%;
+	height: 100%;
+    background-color: #F4F4F4;
+}
+.head_wrap{
+	width:100%;
+	background-color: #FFFFFF;
+}
+.header{
+	width: 90%;
+ 	height: 56px;
+  	margin:0 auto;
+ 	display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.header_cont{
+	width:85%;
+	height: 40px;
+	background-color: #F4F4F4 ;
+	float: left;
+}
+.query{
+	width: 100%;
+	height: 100%;
+	color: #B0B0B0;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	padding-left: 50px;
+	border: none; 
+	background-color: #F4F4F4 ;
+	box-sizing:border-box;
+	outline: none;
+}
+.icon{
+	  position:relative ;
+	  top: -30px;
+	  left: 10px;
+      width: 20px; 
+      height:20px; 
+}
+
+.cancel_btn{
+	float: right;
+	width: 15%;
+	height: 40px;
+	line-height:40px;
+	text-align: center;
+}
+.cancel_btn a{
+	color: #333;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.body{
+	width: 100%;
+	height: auto;
+	margin-top: 8px;
+}
+
+.body_cont{
+	width: 100%;
+	min-height: 65px;
+	background-color: #FFFFFF;
+	margin-bottom:2.5px;
+	display: flex;
+    align-items: center;
+}
+
+.left{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.left_icon{
+	width: 50%;
+}
+
+.right{
+	width: 80%;
+	float: left;
+}
+.title{
+	margin-bottom: 7px;
+}
+.title a{
+	text-decoration: none;
+	color:#424242;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 18px;
+}
+.bean{
+	color:#8D9398;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

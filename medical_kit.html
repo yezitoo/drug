@@ -1,0 +1,60 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/medical_kit.css" />
+    <title>我的药箱</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="drug">
+            <div class="add_h">
+                <div class="drug-cont">
+                    <div class="drug-image">
+                        <img src="img/icon_04.png">
+                    </div>
+                    <div class="drug-name">
+                        <a class="name-size" href="Drug_use.jsp">糠酸莫米松鼻喷雾剂</a>
+                        <br/>
+                        <span class="fac-size">哈药六厂</span>
+                    </div>
+                    <div class="drug-del">
+                        <img id="del" onclick="change()" src="img/icon_06.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-drug">
+            <div class="add-cont">
+                <img class="add-image" src="img/icon_add.png">
+                <span class="add"><a href="queryDrug.jsp">添加药品</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="cover">
+        <div class="choice-box">
+            <span class="marked-words">药品删除，将同时删除提醒</span>
+            <br/>
+            <div class="cut-rule2"></div>
+            <a class="cancle" href="medical_kit.jsp">取消</a>
+            <div class="cut-rule3"></div>
+            <a class="sure" href="medical_kit.jsp">确定</a>
+        </div>
+    </div>
+    <script>
+    function change() {
+        var cover = document.getElementById('cover');
+        cover.style.display = 'block';
+        setTimeout(function() {
+            cover.style.display = 'none';
+        }, 5000)
+    }
+    </script>
+</body>
+
+</html>

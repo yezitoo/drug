@@ -1,0 +1,63 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css"/>
+		<link rel="stylesheet" href="css/warmDrug.css" />
+		<title>用药提醒</title>
+	</head>
+	<!--<script>
+	function change_pic() {
+		var imgObj = document.getElementById("pic");
+		var Flag = (imgObj.getAttribute("src", 2) == "img/button_Switch_on.png");
+		imgObj.src = Flag ? "img/button_Switch_offClick.png" : "img/button_Switch_on.png";
+	}
+    </script>-->
+	
+	<body>
+	<form action="" method="post">	
+		<div class="header">
+			<div class="left">
+				<img class="icon1" src="img/icon_04.png" />
+			</div>
+			<div class="right">
+				<div class="title">莫米松鼻喷雾剂</div>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<div class="warm">用药提醒</div>
+			<div class="icon-btn">
+				<div class="weui-cell__ft">
+                     <input id="tx" class="weui-switch" type="checkbox" />
+                </div>
+			</div>
+			<!--<img src="img/button_Switch_on.png" class="icon2" id="pic" onClick="change_pic()" value=""/>-->
+		</div>
+		<div class="cont">
+			<div class="days">用药天数</div>
+			<div class="day">7天</div>
+		</div>
+		<div class="cont">
+			<div class="rates">用药频率</div>
+			<div class="rate">一天2次</div>
+			<img class="icon3" src="img/icon_02.png"/>
+		</div>
+		<div class="cont">
+		<div class="cont">
+			<div class="times">第1次</div>
+			<div class="time">8:00</div>
+			<img class="icon3" src="img/icon_02.png"/>
+		</div>
+		
+		<div class="footer">
+			<div class="input-div">
+				<input type="submit" value="保存" />
+			</div>	
+		</div>
+	</form>
+	</body>
+</html>
