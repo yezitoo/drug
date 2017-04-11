@@ -16,8 +16,8 @@
         <div class="header">
             <div class="header_cont">
                 <!--<input class="query" type="text" placeholder="搜药品" value="搜药品"
-				    onblur="if(this.value == '') this.value='搜药品';" 
-			        onclick="if(this.value == '搜药品') this.value='';"/>-->
+                    onblur="if(this.value == '') this.value='搜药品';" 
+                    onclick="if(this.value == '搜药品') this.value='';"/>-->
                 <input type="text" class="query" id="queryKeyword" placeholder="搜药品" value="" />
                 <img class="icon" src="img/icon_search.png" />
             </div>
@@ -25,72 +25,78 @@
         </div>
     </div>
     <div class="body">
-        <div class="body_cont">
-            <div class="left">
-                <img class="left_icon" src="img/icon_04.png" />
-            </div>
-            <div class="right">
-                <p class="title"><a href="#">莫米松鼻雾喷剂</a></p>
-                <p class="bean">哈药六厂</p>
-            </div>
-        </div>
-       <div class="body_cont">
-            <div class="left">
-                <img class="left_icon" src="img/icon_04.png" />
-            </div>
-            <div class="right">
-                <p class="title"><a href="#">莫米松鼻雾喷剂</a></p>
-                <p>哈药六厂</p>
-                <p class="bean">哈药六厂</p>
+        <div class="body_cont_wrap">
+            <div class="body_cont">
+                <div class="left">
+                    <img class="left_icon" src="img/icon_04.png" />
+                </div>
+                <div class="right">
+                    <p class="title"><a href="#">莫米松鼻雾喷剂</a></p>
+                    <p class="bean">哈药六厂</p>
+                </div>
+                <div class="select">
+                    <img src="img/icon_unselected.png">
+                </div>
             </div>
         </div>
-        <div class="body_cont">
-            <div class="left">
-                <img class="left_icon" src="img/icon_04.png" />
-            </div>
-            <div class="right">
-                <p class="title"><a href="#">莫米松鼻雾喷剂</a></p>
-                <p>哈药六厂</p>
-                <p>哈药六厂</p>
-                <p>哈药六厂</p>
-                <p>哈药六厂</p>
-                <p class="bean">哈药六厂</p>
+        <div class="body_cont_wrap">
+            <div class="body_cont">
+                <div class="left">
+                    <img class="left_icon" src="img/icon_04.png" />
+                </div>
+                <div class="right">
+                    <p class="title"><a href="#">莫米松鼻雾喷剂</a></p>
+                    <p>哈药六厂</p>
+                    <p>哈药六厂</p>
+                    <p>哈药六厂</p>
+                    <p>哈药六厂</p>
+                    <p class="bean">哈药六厂</p>
+                </div>
+                <div class="select">
+                    <img src="img/icon_unselected.png">
+                </div>
             </div>
         </div>
     </div>
+    <div class="root">
+        <i></i>
+        <span>添加到我的药箱</span>
+    </div>
     <!--<script type="text/javascript">
-			$(function(){
-				drugQuery();
-			});
-			
-			function drugQuery(){
-				var keyword=$("#queryKeyword").val();
-				$.ajax({
-					url:"",
-					type:"post",
-					data:keyword,
-					dataType:"json",
-					success:function(data){
-						alert(data);
-						var str="";
-						$.each(data, function(index,value){
-							str+=" <div class='left'> ";
-							str+=" <img class='left_icon' src='img/icon_04.png'/></div> ";
-							str+=" <div class='right'> ";
-							str+=" <p class='title'><a href='#'> ";
-							str+=莫米松鼻雾喷剂;
-							str+=" </a></p><p class='bean'> ";
-							str+=哈药六厂;
-							str+="</p></div>";
-						});
-						$(".body_cont").html(str);
-					},
-					error:function(err){
-						alert("获取药品查询结果失败");
-					}
-				});
-			}
-		</script>-->
+            $(function(){
+                drugQuery();
+            });
+            
+            function drugQuery(){
+                var keyword=$("#queryKeyword").val();
+                $.ajax({
+                    url:"",
+                    type:"post",
+                    data:keyword,
+                    dataType:"json",
+                    success:function(data){
+                        alert(data);
+                        var str="";
+                        $.each(data, function(index,value){
+                            str+=" <div class='left'> ";
+                            str+=" <img class='left_icon' src='img/icon_04.png'/></div> ";
+                            str+=" <div class='right'> ";
+                            str+=" <p class='title'><a href='#'> ";
+                            str+=莫米松鼻雾喷剂;
+                            str+=" </a></p><p class='bean'> ";
+                            str+=哈药六厂;
+                            str+="</p></div>";
+                        });
+                        $(".body_cont").html(str);
+                    },
+                    error:function(err){
+                        alert("获取药品查询结果失败");
+                    }
+                });
+            }
+        </script>-->
+        <script src="js/jquery-1.8.2.js"></script>
+    <script src="js/queryDrug.js"></script>
 </body>
 
 </html>
